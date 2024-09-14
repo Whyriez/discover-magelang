@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.destination.review.ReviewFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="24dp">
+
+        <TextView
+            android:id="@+id/labelQa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Q&amp;A (4)"
+            android:textAppearance="@style/TextView.CustomFontMedium"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="All reviews (127)"
+            android:textAppearance="@style/TextView.CustomFontMedium"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/labelQa"
+            app:layout_constraintTop_toTopOf="@+id/labelQa" />
+
+        <TextView
+            android:id="@+id/labelRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="4.5"
+            android:textAppearance="@style/TextView.CustomFontBold"
+            android:textSize="48sp"
+            app:layout_constraintStart_toStartOf="@+id/labelQa"
+            app:layout_constraintTop_toBottomOf="@+id/labelQa" />
+
+        <TextView
+            android:id="@+id/labelValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent"
+            android:textAppearance="@style/TextView.CustomFontBold"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/labelQa"
+            app:layout_constraintTop_toBottomOf="@+id/labelRating" />
+
+        <ImageView
+            android:id="@+id/ivRate"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/img_rate"
+            app:layout_constraintStart_toStartOf="@+id/labelValue"
+            app:layout_constraintTop_toBottomOf="@+id/labelValue" />
+
+        <TextView
+            android:id="@+id/labelCountReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="127"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivRate"
+            app:layout_constraintStart_toEndOf="@+id/ivRate"
+            app:layout_constraintTop_toTopOf="@+id/ivRate" />
+
+        <TextView
+            android:id="@+id/labelExcellent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Excellent"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/labelCountReview"
+            app:layout_constraintTop_toTopOf="@+id/labelRating" />
+
+        <ImageView
+            android:id="@+id/ivExcellent"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/img_rate_80"
+            app:layout_constraintBottom_toBottomOf="@+id/labelExcellent"
+            app:layout_constraintStart_toStartOf="@+id/ivVeryGood"
+            app:layout_constraintTop_toTopOf="@+id/labelExcellent" />
+
+        <TextView
+            android:id="@+id/labelCountReview80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="80"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivExcellent"
+            app:layout_constraintStart_toEndOf="@+id/ivExcellent"
+            app:layout_constraintTop_toTopOf="@+id/ivExcellent" />
+
+        <TextView
+            android:id="@+id/labelVeryGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Very Good"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/labelExcellent"
+            app:layout_constraintTop_toBottomOf="@+id/labelExcellent" />
+
+        <ImageView
+            android:id="@+id/ivVeryGood"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/img_rate_33"
+            app:layout_constraintBottom_toBottomOf="@+id/labelVeryGood"
+            app:layout_constraintStart_toEndOf="@+id/labelVeryGood"
+            app:layout_constraintTop_toTopOf="@+id/labelVeryGood" />
+
+        <TextView
+            android:id="@+id/labelCountReview33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="33"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivVeryGood"
+            app:layout_constraintStart_toEndOf="@+id/ivVeryGood"
+            app:layout_constraintTop_toTopOf="@+id/ivVeryGood" />
+
+        <TextView
+            android:id="@+id/labelAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Average"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/labelExcellent"
+            app:layout_constraintTop_toBottomOf="@+id/labelVeryGood" />
+
+        <ImageView
+            android:id="@+id/ivAverage"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/img_rate_13"
+            app:layout_constraintBottom_toBottomOf="@+id/labelAverage"
+            app:layout_constraintStart_toStartOf="@+id/ivVeryGood"
+            app:layout_constraintTop_toTopOf="@+id/labelAverage" />
+
+        <TextView
+            android:id="@+id/labelCountReview13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="13"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivAverage"
+            app:layout_constraintStart_toEndOf="@+id/ivAverage"
+            app:layout_constraintTop_toTopOf="@+id/ivAverage" />
+
+        <TextView
+            android:id="@+id/labelPoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Poor"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/labelExcellent"
+            app:layout_constraintTop_toBottomOf="@+id/labelAverage" />
+
+        <ImageView
+            android:id="@+id/ivPoor"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/img_rate_1"
+            app:layout_constraintBottom_toBottomOf="@+id/labelPoor"
+            app:layout_constraintStart_toStartOf="@+id/ivAverage"
+            app:layout_constraintTop_toTopOf="@+id/labelPoor" />
+
+        <TextView
+            android:id="@+id/labelCountReview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="1"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPoor"
+            app:layout_constraintStart_toEndOf="@+id/ivPoor"
+            app:layout_constraintTop_toBottomOf="@+id/ivAverage" />
+
+        <TextView
+            android:id="@+id/labelTerrible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Terrible"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/labelExcellent"
+            app:layout_constraintTop_toBottomOf="@+id/labelPoor" />
+
+        <ImageView
+            android:id="@+id/ivTerrible"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/img_rate_0"
+            app:layout_constraintBottom_toBottomOf="@+id/labelTerrible"
+            app:layout_constraintStart_toStartOf="@+id/ivPoor"
+            app:layout_constraintTop_toTopOf="@+id/labelTerrible" />
+
+        <TextView
+            android:id="@+id/labelCountReview0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="0"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTerrible"
+            app:layout_constraintStart_toEndOf="@+id/ivTerrible"
+            app:layout_constraintTop_toTopOf="@+id/ivTerrible" />
+
+        <Button
+            android:id="@+id/buttonWriteReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Write a review"
+            android:textAppearance="@style/TextView.CustomFontMedium"
+            android:textSize="14sp"
+            style="@style/Widget.Material3.Button.Icon"
+            app:icon="@drawable/ic_pencil"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivRate" />
+
+        <TextView
+            android:id="@+id/labelQaTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Q&amp;A"
+            android:textAppearance="@style/TextView.CustomFontBold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonWriteReview" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvQa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingVertical="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelQaTitle"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_row_qa" />
+
+        <Button
+            android:id="@+id/outlinedButton"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextView.CustomFontMedium"
+            android:text="See all 4 questions"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvQa" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/outlinedButton"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_row_review" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

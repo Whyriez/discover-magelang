@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.destination.information.InformationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="24dp"
+        android:layout_marginHorizontal="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi Obyek Wisata"
+            android:textAppearance="@style/TextView.CustomFontBold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            tools:ignore="VisualLintLongText"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jam Buka"
+            android:textAppearance="@style/TextView.CustomFontBold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextView.CustomFontRegular"
+            android:textSize="12sp"
+            app:drawableStartCompat="@drawable/ic_clock"
+            android:drawablePadding="8dp"
+            android:text="7:00 - 17:00 WIB" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fasilitas yang Tersedia"
+            android:textAppearance="@style/TextView.CustomFontBold"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFacility"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingVertical="12dp"
+            tools:listitem="@layout/item_row_facility"
+            tools:itemCount="9"
+            app:spanCount="4"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Biaya"
+            android:textAppearance="@style/TextView.CustomFontBold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiket Masuk"
+            android:layout_marginVertical="24dp"
+            android:drawablePadding="8dp"
+            android:textAppearance="@style/TextView.CustomFontBold"
+            android:textSize="14sp"
+            app:drawableEndCompat="@drawable/ic_arrow_down"
+            app:drawableStartCompat="@drawable/ic_ticket" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parkir Kendaraan"
+            android:drawablePadding="8dp"
+            android:textAppearance="@style/TextView.CustomFontBold"
+            android:textSize="14sp"
+            app:drawableEndCompat="@drawable/ic_arrow_down"
+            app:drawableStartCompat="@drawable/ic_car" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lain-lain"
+            android:drawablePadding="8dp"
+            android:textAppearance="@style/TextView.CustomFontBold"
+            android:textSize="14sp"
+            android:layout_marginVertical="24dp"
+            app:drawableEndCompat="@drawable/ic_arrow_up"
+            app:drawableStartCompat="@drawable/ic_other" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvOther"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:clipToPadding="false"
+            tools:listitem="@layout/item_row_other"
+            tools:itemCount="4"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

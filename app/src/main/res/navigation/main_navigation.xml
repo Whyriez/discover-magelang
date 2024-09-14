@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.andri.discovermagelang.ui.main.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/blogFragment"
+        android:name="com.andri.discovermagelang.ui.main.blog.BlogFragment"
+        android:label="fragment_blog"
+        tools:layout="@layout/fragment_blog" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.andri.discoverin.ui.main.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.andri.discovermagelang.ui.main.bookmark.BookmarkFragment"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/fragment_bookmark" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.andri.discovermagelang.ui.main.profile.ProfileFragment"
+        android:label="fragment_profiles"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/destinationFragment"
+        android:name="com.andri.discovermagelang.ui.destination.DestinationFragment"
+        android:label="fragment_destination"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.andri.discovermagelang.ui.main.profile.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/otherDestinationFragment"
+        android:name="com.andri.discovermagelang.ui.destination.other.OtherDestinationFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_other_destination" />
+</navigation>
